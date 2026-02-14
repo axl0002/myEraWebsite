@@ -1,3 +1,5 @@
+import { WaitlistForm } from "./waitlist-form";
+
 const BTS_MEMBERS = [
   { name: "RM", role: "Leader & Rapper" },
   { name: "Jin", role: "Vocalist" },
@@ -30,10 +32,10 @@ export function Navbar() {
           </a>
         </div>
         <a
-          href="#download"
+          href="#waitlist"
           className="px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition-colors text-sm font-medium"
         >
-          Get the App
+          Join Waitlist
         </a>
       </div>
     </nav>
@@ -67,33 +69,12 @@ export function HeroSection() {
           Build your personal era collection, starting with BTS.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up [animation-delay:400ms] opacity-0">
-          <a
-            href="#download"
-            className="group px-8 py-3.5 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 transition-all text-white font-medium flex items-center gap-2 glow-purple"
-          >
-            Download Now
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </a>
-          <a
-            href="#features"
-            className="px-8 py-3.5 rounded-full border border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-500/5 transition-all text-purple-200 font-medium"
-          >
-            Learn More
-          </a>
+        {/* Waitlist */}
+        <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full">
+          <WaitlistForm />
+          <p className="text-purple-300/30 text-sm mt-3">
+            Be the first to know when we launch.
+          </p>
         </div>
 
         {/* Phone mockup placeholder */}
@@ -284,8 +265,8 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      title: "Download the App",
-      description: "Get My Era from the App Store or Google Play.",
+      title: "Join the Waitlist",
+      description: "Sign up with your email to get early access when we launch.",
     },
     {
       step: "02",
@@ -342,7 +323,7 @@ export function HowItWorksSection() {
 
 export function CTASection() {
   return (
-    <section id="download" className="py-20 sm:py-32 px-6 relative">
+    <section id="waitlist" className="py-20 sm:py-32 px-6 relative">
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px]" />
@@ -355,42 +336,14 @@ export function CTASection() {
           <span className="text-gradient">your era?</span>
         </h2>
         <p className="text-purple-200/50 text-lg max-w-xl mx-auto mb-10">
-          Join thousands of ARMY already sharing their favourite BTS moments.
-          Download My Era and start building your collection today.
+          Be the first to know when My Era launches. Join the waitlist and
+          get early access to start sharing your favourite BTS moments.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {/* App Store Button */}
-          <a
-            href="#"
-            className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-purple-500/20 hover:border-purple-500/40 hover:bg-white/10 transition-all"
-          >
-            <AppleIcon className="w-8 h-8 text-white" />
-            <div className="text-left">
-              <div className="text-[10px] text-purple-300/60 uppercase tracking-wider">
-                Download on the
-              </div>
-              <div className="text-base font-semibold -mt-0.5">App Store</div>
-            </div>
-          </a>
+        <WaitlistForm />
 
-          {/* Google Play Button */}
-          <a
-            href="#"
-            className="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-purple-500/20 hover:border-purple-500/40 hover:bg-white/10 transition-all"
-          >
-            <PlayStoreIcon className="w-8 h-8" />
-            <div className="text-left">
-              <div className="text-[10px] text-purple-300/60 uppercase tracking-wider">
-                Get it on
-              </div>
-              <div className="text-base font-semibold -mt-0.5">Google Play</div>
-            </div>
-          </a>
-        </div>
-
-        <p className="text-purple-300/30 text-sm mt-8">
-          Coming soon. Join the waitlist to get early access.
+        <p className="text-purple-300/30 text-sm mt-6">
+          No spam, ever. We&apos;ll only email you when the app is ready.
         </p>
       </div>
     </section>
@@ -527,38 +480,3 @@ function ShieldIcon({ className }: { className?: string }) {
   );
 }
 
-function AppleIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-    </svg>
-  );
-}
-
-function PlayStoreIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92z"
-        fill="#4285F4"
-      />
-      <path
-        d="M17.727 8.063L5.21.837a1.003 1.003 0 00-.476-.152L14.795 10.74l2.932-2.676z"
-        fill="#EA4335"
-      />
-      <path
-        d="M17.727 15.937l-2.932-2.676-10.06 10.054c.157-.014.32-.065.476-.152l12.516-7.226z"
-        fill="#34A853"
-      />
-      <path
-        d="M21.398 10.837l-3.67-2.774-3.002 2.676L17.728 13.5l3.67-2.663z"
-        fill="#FBBC04"
-      />
-      <path
-        d="M17.727 15.937L5.21 23.163c.157.087.32.138.476.152L14.795 13.26l2.932 2.676z"
-        fill="#34A853"
-        opacity={0}
-      />
-    </svg>
-  );
-}
