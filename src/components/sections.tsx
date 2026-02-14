@@ -43,7 +43,7 @@ export function HeroSection() {
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up">
           Relive your favourite
           <br />
-          <span className="text-gradient">K-Pop moments</span>
+          <span className="text-gradient">K-Pop memories</span>
         </h1>
 
         {/* Subtitle */}
@@ -141,9 +141,9 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
-            Everything you need to
+            Your eras, your memories,
             <br />
-            <span className="text-gradient">preserve your eras</span>
+            <span className="text-gradient">all in one place</span>
           </h2>
           <p className="text-purple-200/50 text-lg max-w-xl mx-auto">
             A space designed for K-Pop fans to collect, share, and relive their
