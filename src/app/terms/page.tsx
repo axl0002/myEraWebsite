@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function TermsOfService() {
   return (
     <div className="min-h-screen bg-background">
-      <nav className="border-b border-purple-900/20 px-6 py-5">
+      <nav className="border-b border-pink-200/30 px-6 py-5">
         <div className="max-w-3xl mx-auto">
           <Link href="/" className="flex items-center gap-2 w-fit">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
               <span className="text-white font-bold text-xs">M</span>
             </div>
             <span className="text-sm font-semibold tracking-tight">my era</span>
@@ -22,11 +22,11 @@ export default function TermsOfService() {
 
       <main className="max-w-3xl mx-auto px-6 py-12 sm:py-20">
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">Terms of Service</h1>
-        <p className="text-purple-300/50 text-sm mb-12">
+        <p className="text-gray-400 text-sm mb-12">
           Last updated: 14 February 2026
         </p>
 
-        <div className="space-y-10 text-purple-200/70 leading-relaxed">
+        <div className="space-y-10 text-gray-500 leading-relaxed">
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
             <p>
@@ -60,7 +60,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. User Content</h2>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               4.1 Your Content
             </h3>
             <p>
@@ -70,7 +70,7 @@ export default function TermsOfService() {
               distribute your User Content in connection with operating and providing the Service.
             </p>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               4.2 Content Responsibility
             </h3>
             <p>
@@ -79,7 +79,7 @@ export default function TermsOfService() {
               does not violate the rights of any third party.
             </p>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               4.3 Content Removal
             </h3>
             <p>
@@ -191,7 +191,7 @@ export default function TermsOfService() {
               If you have any questions about these Terms, please contact us at:{" "}
               <a
                 href="mailto:support@getmyera.app"
-                className="text-purple-400 hover:text-purple-300 transition-colors"
+                className="text-pink-400 hover:text-pink-500 transition-colors"
               >
                 support@getmyera.app
               </a>

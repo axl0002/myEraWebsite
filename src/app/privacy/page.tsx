@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background">
-      <nav className="border-b border-purple-900/20 px-6 py-5">
+      <nav className="border-b border-pink-200/30 px-6 py-5">
         <div className="max-w-3xl mx-auto">
           <Link href="/" className="flex items-center gap-2 w-fit">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
               <span className="text-white font-bold text-xs">M</span>
             </div>
             <span className="text-sm font-semibold tracking-tight">my era</span>
@@ -22,11 +22,11 @@ export default function PrivacyPolicy() {
 
       <main className="max-w-3xl mx-auto px-6 py-12 sm:py-20">
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">Privacy Policy</h1>
-        <p className="text-purple-300/50 text-sm mb-12">
+        <p className="text-gray-400 text-sm mb-12">
           Last updated: 14 February 2026
         </p>
 
-        <div className="space-y-10 text-purple-200/70 leading-relaxed">
+        <div className="space-y-10 text-gray-500 leading-relaxed">
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
             <p>
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">2. Information We Collect</h2>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               2.1 Account Information
             </h3>
             <p>
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
               Apple or Google password.
             </p>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               2.2 User Content
             </h3>
             <p>
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
               and comments you post about K-Pop idols and their eras.
             </p>
 
-            <h3 className="text-base font-semibold text-purple-200 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
               2.3 Automatically Collected Information
             </h3>
             <p>
@@ -86,16 +86,16 @@ export default function PrivacyPolicy() {
             <p className="mb-3">We do not sell your personal information. We may share your information in the following circumstances:</p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>
-                <strong className="text-purple-200">Public content:</strong> Memories and comments you post are visible to other users of the Service.
+                <strong className="text-gray-600">Public content:</strong> Memories and comments you post are visible to other users of the Service.
               </li>
               <li>
-                <strong className="text-purple-200">Service providers:</strong> We may share information with third-party vendors who assist us in operating the Service (e.g. hosting, analytics), subject to confidentiality obligations.
+                <strong className="text-gray-600">Service providers:</strong> We may share information with third-party vendors who assist us in operating the Service (e.g. hosting, analytics), subject to confidentiality obligations.
               </li>
               <li>
-                <strong className="text-purple-200">Legal requirements:</strong> We may disclose information if required by law, regulation, or legal process.
+                <strong className="text-gray-600">Legal requirements:</strong> We may disclose information if required by law, regulation, or legal process.
               </li>
               <li>
-                <strong className="text-purple-200">Safety:</strong> We may disclose information when we believe it is necessary to protect the safety of our users or the public.
+                <strong className="text-gray-600">Safety:</strong> We may disclose information when we believe it is necessary to protect the safety of our users or the public.
               </li>
             </ul>
           </section>
@@ -162,10 +162,10 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy or our data practices, please
               contact us at:{" "}
               <a
-                href="mailto:privacy@getmyera.app"
-                className="text-purple-400 hover:text-purple-300 transition-colors"
+                href="mailto:support@getmyera.app"
+                className="text-pink-400 hover:text-pink-500 transition-colors"
               >
-                privacy@getmyera.app
+                support@getmyera.app
               </a>
             </p>
           </section>
