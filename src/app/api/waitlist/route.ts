@@ -41,12 +41,21 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
   }
 
+  if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) {
+    console.error("Missing env vars:", {
+      hasUrl: !!process.env.SUPABASE_URL,
+      hasKey: !!process.env.SUPABASE_ANON_KEY,
+    });
+    return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+  }
+
   const supabase = getSupabase();
   const { error } = await supabase
     .from("waitlist")
     .insert({ email: trimmed });
 
   if (error) {
+    console.error("Supabase error:", error.message, error.code);
     if (error.code === "23505") {
       return NextResponse.json({ message: "You're already on the waitlist!" });
     }
