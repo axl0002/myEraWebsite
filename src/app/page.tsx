@@ -2,8 +2,6 @@ import {
   HeroSection,
   FeaturesSection,
   BTSSection,
-  HowItWorksSection,
-  CTASection,
   Footer,
   Navbar,
 } from "@/components/sections";
@@ -16,8 +14,8 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <BTSSection />
-        <HowItWorksSection />
-        <CTASection />
+        {/* <HowItWorksSection /> */}
+        {/* <CTASection /> */}
       </main>
       <Footer />
     </div>

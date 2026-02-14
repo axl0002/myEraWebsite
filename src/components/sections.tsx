@@ -20,23 +20,6 @@ export function Navbar() {
           </div>
           <span className="text-lg font-semibold tracking-tight">my era</span>
         </div>
-        <div className="hidden sm:flex items-center gap-8 text-sm text-purple-200/70">
-          <a href="#features" className="hover:text-white transition-colors">
-            Features
-          </a>
-          <a href="#bts" className="hover:text-white transition-colors">
-            BTS
-          </a>
-          <a href="#how-it-works" className="hover:text-white transition-colors">
-            How It Works
-          </a>
-        </div>
-        <a
-          href="#waitlist"
-          className="px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-500 transition-colors text-sm font-medium"
-        >
-          Join Waitlist
-        </a>
       </div>
     </nav>
   );
@@ -231,9 +214,6 @@ export function BTSSection() {
                 <h3 className="font-semibold text-sm sm:text-base">
                   {member.name}
                 </h3>
-                <p className="text-[11px] text-purple-300/50 mt-1 text-center">
-                  {member.role}
-                </p>
               </div>
               {/* Hover glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-purple-600/20 to-transparent" />
@@ -363,10 +343,10 @@ export function Footer() {
           </div>
 
           <div className="flex items-center gap-6 text-sm text-purple-300/40">
-            <a href="#" className="hover:text-purple-300/70 transition-colors">
+            <a href="/privacy" className="hover:text-purple-300/70 transition-colors">
               Privacy
             </a>
-            <a href="#" className="hover:text-purple-300/70 transition-colors">
+            <a href="/terms" className="hover:text-purple-300/70 transition-colors">
               Terms
             </a>
             <a href="#" className="hover:text-purple-300/70 transition-colors">
