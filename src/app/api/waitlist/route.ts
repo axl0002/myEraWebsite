@@ -41,13 +41,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
   }
 
-  if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) {
-    return NextResponse.json(
-      { error: `[DEBUG] Missing env: URL=${!!process.env.SUPABASE_URL}, KEY=${!!process.env.SUPABASE_ANON_KEY}` },
-      { status: 500 }
-    );
-  }
-
   const supabase = getSupabase();
   const { error } = await supabase
     .from("waitlist")
@@ -57,11 +50,7 @@ export async function POST(request: NextRequest) {
     if (error.code === "23505") {
       return NextResponse.json({ message: "You're already on the waitlist!" });
     }
-    // TODO: remove debug info before launch
-    return NextResponse.json(
-      { error: `[DEBUG] ${error.message} (code: ${error.code})` },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }
 
   return NextResponse.json({ message: "You're on the list!" });
