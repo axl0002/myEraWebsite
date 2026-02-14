@@ -42,11 +42,10 @@ export async function POST(request: NextRequest) {
   }
 
   if (!process.env.SUPABASE_URL || !process.env.SUPABASE_ANON_KEY) {
-    console.error("Missing env vars:", {
-      hasUrl: !!process.env.SUPABASE_URL,
-      hasKey: !!process.env.SUPABASE_ANON_KEY,
-    });
-    return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    return NextResponse.json(
+      { error: `[DEBUG] Missing env: URL=${!!process.env.SUPABASE_URL}, KEY=${!!process.env.SUPABASE_ANON_KEY}` },
+      { status: 500 }
+    );
   }
 
   const supabase = getSupabase();
@@ -55,11 +54,14 @@ export async function POST(request: NextRequest) {
     .insert({ email: trimmed });
 
   if (error) {
-    console.error("Supabase error:", error.message, error.code);
     if (error.code === "23505") {
       return NextResponse.json({ message: "You're already on the waitlist!" });
     }
-    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
+    // TODO: remove debug info before launch
+    return NextResponse.json(
+      { error: `[DEBUG] ${error.message} (code: ${error.code})` },
+      { status: 500 }
+    );
   }
 
   return NextResponse.json({ message: "You're on the list!" });
