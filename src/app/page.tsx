@@ -8,7 +8,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background bg-grid overflow-hidden">
+    <div className="min-h-screen bg-background overflow-hidden">
       <Navbar />
       <main>
         <HeroSection />

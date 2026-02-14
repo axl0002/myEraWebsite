@@ -12,10 +12,10 @@ const BTS_MEMBERS = [
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-purple-900/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-pink-200/30">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
             <span className="text-white font-bold text-sm">M</span>
           </div>
           <span className="text-lg font-semibold tracking-tight">my era</span>
@@ -29,13 +29,13 @@ export function HeroSection() {
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-32 px-6">
       {/* Background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-20 right-1/4 w-[300px] h-[300px] bg-purple-400/5 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-pink-300/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-20 right-1/4 w-[400px] h-[400px] bg-blue-300/15 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm mb-8 animate-fade-in">
-          <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-pink-300/40 bg-pink-50 text-pink-400 text-sm mb-8 animate-fade-in">
+          <span className="w-2 h-2 rounded-full bg-pink-300 animate-pulse" />
           BTS is back — celebrate their comeback
         </div>
 
@@ -47,7 +47,7 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl text-purple-200/60 max-w-2xl mx-auto mb-10 animate-fade-in-up [animation-delay:200ms] opacity-0">
+        <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto mb-10 animate-fade-in-up [animation-delay:200ms] opacity-0">
           Upload and share your most cherished memories of your favourite idols.
           Build your personal era collection, starting with BTS.
         </p>
@@ -55,30 +55,30 @@ export function HeroSection() {
         {/* Waitlist */}
         <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full">
           <WaitlistForm />
-          <p className="text-purple-300/30 text-sm mt-3">
+          <p className="text-gray-400 text-sm mt-3">
             Be the first to know when we launch.
           </p>
         </div>
 
         {/* Phone mockup placeholder */}
         <div className="relative mt-16 sm:mt-20 animate-fade-in-up [animation-delay:600ms] opacity-0">
-          <div className="mx-auto w-[280px] h-[560px] rounded-[3rem] border-2 border-purple-500/20 bg-gradient-to-b from-purple-950/50 to-background p-3 glow-purple">
-            <div className="w-full h-full rounded-[2.5rem] bg-gradient-to-b from-purple-900/30 to-purple-950/50 border border-purple-500/10 flex flex-col items-center justify-center overflow-hidden">
+          <div className="mx-auto w-[280px] h-[560px] rounded-[3rem] border-2 border-pink-200/40 bg-gradient-to-b from-pink-50 to-blue-50 p-3 glow-accent">
+            <div className="w-full h-full rounded-[2.5rem] bg-gradient-to-b from-white to-pink-50/50 border border-pink-100 flex flex-col items-center justify-center overflow-hidden">
               {/* Notch */}
               <div className="absolute top-6 w-24 h-6 bg-background rounded-full" />
               {/* Mock app content */}
               <div className="flex flex-col items-center gap-4 p-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">M</span>
                 </div>
-                <p className="text-purple-300/80 text-sm font-medium">my era</p>
+                <p className="text-pink-400 text-sm font-medium">my era</p>
                 <div className="flex gap-2 mt-4">
                   {["RM", "Jin", "SUGA"].map((name) => (
                     <div
                       key={name}
-                      className="w-16 h-20 rounded-xl bg-purple-800/30 border border-purple-500/20 flex items-end justify-center pb-1"
+                      className="w-16 h-20 rounded-xl bg-gradient-to-b from-pink-100/60 to-blue-100/60 border border-pink-200/40 flex items-end justify-center pb-1"
                     >
-                      <span className="text-[10px] text-purple-300/70">{name}</span>
+                      <span className="text-[10px] text-gray-500">{name}</span>
                     </div>
                   ))}
                 </div>
@@ -86,9 +86,9 @@ export function HeroSection() {
                   {["j-hope", "Jimin", "V", "JK"].map((name) => (
                     <div
                       key={name}
-                      className="w-14 h-18 rounded-xl bg-purple-800/30 border border-purple-500/20 flex items-end justify-center pb-1"
+                      className="w-14 h-18 rounded-xl bg-gradient-to-b from-blue-100/60 to-pink-100/60 border border-blue-200/40 flex items-end justify-center pb-1"
                     >
-                      <span className="text-[10px] text-purple-300/70">{name}</span>
+                      <span className="text-[10px] text-gray-500">{name}</span>
                     </div>
                   ))}
                 </div>
@@ -96,11 +96,11 @@ export function HeroSection() {
             </div>
           </div>
           {/* Floating decorative elements */}
-          <div className="absolute -left-4 top-1/3 w-20 h-20 rounded-2xl bg-purple-600/10 border border-purple-500/20 backdrop-blur-sm animate-float flex items-center justify-center">
-            <HeartIcon className="w-8 h-8 text-purple-400" />
+          <div className="absolute -left-4 top-1/3 w-20 h-20 rounded-2xl bg-pink-50 border border-pink-200/40 backdrop-blur-sm animate-float flex items-center justify-center">
+            <HeartIcon className="w-8 h-8 text-pink-400" />
           </div>
-          <div className="absolute -right-4 top-1/2 w-16 h-16 rounded-2xl bg-purple-600/10 border border-purple-500/20 backdrop-blur-sm animate-float [animation-delay:2s] flex items-center justify-center">
-            <StarIcon className="w-6 h-6 text-purple-400" />
+          <div className="absolute -right-4 top-1/2 w-16 h-16 rounded-2xl bg-blue-50 border border-blue-200/40 backdrop-blur-sm animate-float [animation-delay:2s] flex items-center justify-center">
+            <StarIcon className="w-6 h-6 text-blue-400" />
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ export function FeaturesSection() {
             <br />
             <span className="text-gradient">all in one place</span>
           </h2>
-          <p className="text-purple-200/50 text-lg max-w-xl mx-auto">
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">
             A space designed for K-Pop fans to collect, share, and relive their
             most treasured moments.
           </p>
@@ -155,13 +155,13 @@ export function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group p-8 rounded-2xl border border-purple-500/10 bg-purple-950/20 hover:border-purple-500/30 hover:bg-purple-950/40 transition-all duration-300"
+              className="group p-8 rounded-2xl border border-pink-200/30 bg-white/60 hover:border-pink-300/50 hover:bg-white/80 hover:shadow-lg hover:shadow-pink-100/30 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center text-purple-400 mb-5 group-hover:bg-purple-600/30 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-100 to-blue-100 flex items-center justify-center text-pink-400 mb-5 group-hover:from-pink-200 group-hover:to-blue-200 transition-colors">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-purple-200/50 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -176,11 +176,12 @@ export function BTSSection() {
   return (
     <section id="bts" className="py-20 sm:py-32 px-6 relative">
       {/* Background accent */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-200/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute right-0 top-1/3 w-[300px] h-[300px] bg-pink-200/15 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-300/40 bg-blue-50 text-blue-400 text-sm mb-6">
             Featured Group
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
@@ -188,7 +189,7 @@ export function BTSSection() {
             <br />
             <span className="text-gradient">comeback</span>
           </h2>
-          <p className="text-purple-200/50 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             To celebrate BTS reuniting, My Era is launching with exclusive
             support for all 7 members. Upload your favourite moments from every
             era — from debut to today.
@@ -200,14 +201,14 @@ export function BTSSection() {
           {BTS_MEMBERS.map((member, i) => (
             <div
               key={member.name}
-              className="group relative aspect-[3/4] rounded-2xl border border-purple-500/15 bg-gradient-to-b from-purple-900/20 to-purple-950/40 overflow-hidden hover:border-purple-500/40 transition-all duration-300 hover:scale-105"
+              className="group relative aspect-[3/4] rounded-2xl border border-pink-200/30 bg-gradient-to-b from-white to-pink-50/50 overflow-hidden hover:border-pink-300/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-100/30"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              {/* Placeholder gradient for member photo */}
-              <div className="absolute inset-0 bg-gradient-to-b from-purple-800/10 to-purple-950/60" />
+              {/* Placeholder gradient */}
+              <div className="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-pink-50/50" />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-3">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-purple-600/30 border border-purple-400/30 flex items-center justify-center mb-3">
-                  <span className="text-lg font-bold text-purple-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-pink-200 to-blue-200 border border-pink-300/30 flex items-center justify-center mb-3">
+                  <span className="text-lg font-bold text-pink-400">
                     {member.name[0]}
                   </span>
                 </div>
@@ -216,7 +217,7 @@ export function BTSSection() {
                 </h3>
               </div>
               {/* Hover glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-purple-600/20 to-transparent" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-pink-200/20 to-transparent" />
             </div>
           ))}
         </div>
@@ -232,7 +233,7 @@ export function BTSSection() {
               <div className="text-2xl sm:text-3xl font-bold text-gradient">
                 {stat.value}
               </div>
-              <div className="text-sm text-purple-300/50 mt-1">{stat.label}</div>
+              <div className="text-sm text-gray-400 mt-1">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -273,7 +274,7 @@ export function HowItWorksSection() {
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
             How it <span className="text-gradient">works</span>
           </h2>
-          <p className="text-purple-200/50 text-lg">
+          <p className="text-gray-500 text-lg">
             Start preserving your favourite K-Pop moments in four simple steps.
           </p>
         </div>
@@ -282,16 +283,16 @@ export function HowItWorksSection() {
           {steps.map((item) => (
             <div
               key={item.step}
-              className="flex gap-6 items-start p-6 rounded-2xl border border-purple-500/10 bg-purple-950/20 hover:border-purple-500/20 transition-all group"
+              className="flex gap-6 items-start p-6 rounded-2xl border border-pink-200/30 bg-white/60 hover:border-pink-300/50 transition-all group"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600/30 to-purple-700/20 flex items-center justify-center border border-purple-500/20 group-hover:from-purple-600/50 transition-all">
-                <span className="text-sm font-bold text-purple-300">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-pink-100 to-blue-100 flex items-center justify-center border border-pink-200/30 group-hover:from-pink-200 group-hover:to-blue-200 transition-all">
+                <span className="text-sm font-bold text-pink-400">
                   {item.step}
                 </span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
-                <p className="text-purple-200/50">{item.description}</p>
+                <p className="text-gray-500">{item.description}</p>
               </div>
             </div>
           ))}
@@ -306,7 +307,7 @@ export function CTASection() {
     <section id="waitlist" className="py-20 sm:py-32 px-6 relative">
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px]" />
+        <div className="w-[500px] h-[500px] bg-pink-200/15 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative max-w-3xl mx-auto text-center">
@@ -315,14 +316,14 @@ export function CTASection() {
           <br />
           <span className="text-gradient">your era?</span>
         </h2>
-        <p className="text-purple-200/50 text-lg max-w-xl mx-auto mb-10">
+        <p className="text-gray-500 text-lg max-w-xl mx-auto mb-10">
           Be the first to know when My Era launches. Join the waitlist and
           get early access to start sharing your favourite BTS moments.
         </p>
 
         <WaitlistForm />
 
-        <p className="text-purple-300/30 text-sm mt-6">
+        <p className="text-gray-400 text-sm mt-6">
           No spam, ever. We&apos;ll only email you when the app is ready.
         </p>
       </div>
@@ -332,29 +333,29 @@ export function CTASection() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-purple-900/20 py-12 px-6">
+    <footer className="border-t border-pink-200/30 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
               <span className="text-white font-bold text-xs">M</span>
             </div>
             <span className="text-sm font-semibold tracking-tight">my era</span>
           </div>
 
-          <div className="flex items-center gap-6 text-sm text-purple-300/40">
-            <a href="/privacy" className="hover:text-purple-300/70 transition-colors">
+          <div className="flex items-center gap-6 text-sm text-gray-400">
+            <a href="/privacy" className="hover:text-gray-600 transition-colors">
               Privacy
             </a>
-            <a href="/terms" className="hover:text-purple-300/70 transition-colors">
+            <a href="/terms" className="hover:text-gray-600 transition-colors">
               Terms
             </a>
-            <a href="#" className="hover:text-purple-300/70 transition-colors">
+            <a href="#" className="hover:text-gray-600 transition-colors">
               Contact
             </a>
           </div>
 
-          <p className="text-sm text-purple-300/30">
+          <p className="text-sm text-gray-400">
             &copy; 2026 My Era. All rights reserved.
           </p>
         </div>
@@ -459,4 +460,3 @@ function ShieldIcon({ className }: { className?: string }) {
     </svg>
   );
 }
-
