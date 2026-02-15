@@ -1,13 +1,14 @@
+import Image from "next/image";
 import { WaitlistForm } from "./waitlist-form";
 
 const BTS_MEMBERS = [
-  { name: "RM", role: "Leader & Rapper" },
-  { name: "Jin", role: "Vocalist" },
-  { name: "SUGA", role: "Rapper & Producer" },
-  { name: "j-hope", role: "Dancer & Rapper" },
-  { name: "Jimin", role: "Vocalist & Dancer" },
-  { name: "V", role: "Vocalist" },
-  { name: "Jungkook", role: "Vocalist" },
+  { name: "RM", image: "/members/RM.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB9R9w5PkPa8v/2gAIAQEAAQUCtL+a4nN5aE3f71ROX//aAAgBAxEBPwH3iOH/2gAIAQIRAT8BlhjPl//aAAgBAQAGPwK03KS7XLMhVJYRGRy6+nwdeaGQy//EABcQAQEBAQAAAAAAAAAAAAAAAAERACH/2gAIAQEAAT8hj8bQgQhjYc7LWA1e8vw2fxeQdt//2gAMAwEAAhEDEQAAEFf/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EA/Hc/O//9oACAECEQE/EHPj+3+L/9oACAEBAAE/EFXKSzhESzqiMDgJgIglEvYkj6uAYBx1LJY9vN5C+T3f/9k=" },
+  { name: "Jin", image: "/members/Jin.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB+ivVfm2q97yP/9oACAEBAAEFAvEPO9+94tS9yJ9+IFf/2gAIAQMRAT8B/Vcnh//aAAgBAhEBPwH9ADEcv//aAAgBAQAGPwLb1wXxgCFDJCTp/lfCjqJUfiHP/aPb/8QAFxABAQEBAAAAAAAAAAAAAAAAAREAIf/aAAgBAQABPyFDObKiZU9rEP1eoDx/9qx1tMYc3//aAAwDAQACEQMRAAAQE//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMRAT8QEET/2gAIAQIRAT8QNL/T9b//2gAIAQEAAT8QMH+QpB4hXixMFmgR/dc48UxBeSfF9vnXu//Z" },
+  { name: "SUGA", image: "/members/Suga.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB+hvWfJ7L2/H/AP/aAAgBAQABBQLd7qOXd+ZGp26EG1QkBH//2gAIAQMRAT8BHVf0f//aAAgBAhEBPwGfRjgW/wD/2gAIAQEABj8CsVR3ikxRHqCa48f1vJKgQfi4qgcGAB5P/8QAFxABAQEBAAAAAAAAAAAAAAAAAREAIf/aAAgBAQABPyEKrJoCaVMkZ6oc2mIIRsxL4UJAAv//2gAMAwEAAhEDEQAAEHP/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EGVX/9oACAECEQE/EFGji//aAAgBAQABPxBDyrJBC4A+Qc4tLlg+aAjOicXdt7h80pIAAAAYBf/Z" },
+  { name: "J-Hope", image: "/members/J-Hope.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB+mb/AMY+cPQw/9oACAEBAAEFAt/mVbH9KbS/ExP6RUteX//aAAgBAxEBPwEYgQ//2gAIAQIRAT8BEeH/2gAIAQEABj8CtZIrjlBK+pI4kF/4zH+LH9hP8LPUX//EABcQAQEBAQAAAAAAAAAAAAAAAAERACH/2gAIAQEAAT8hVYUfPaOws20KBWLP/2gAMAwEAAhEDEQAAEG//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EADf/9oACAECEQE/ENTrf//aAAgBAQABPxCDTW6kAyKghHIWNvWM9JE+R4qfSwVjlWqovZ83/9k=" },
+  { name: "Jimin", image: "/members/Jimin.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB+gO38ub+7w//2gAIAQEAAQUCvJLtG55JU77/AGpIkXh//9oACAEDEQE/ARjFP//aAAgBAhEBPwEwf//aAAgBAQAGPwK2n59LVIoUJ/arrl9jyBqCyP8Ab4NPUeD/AP/EABcQAQEBAQAAAAAAAAAAAAAAAAERACH/2gAIAQEAAT8hFjnsw0Y7FEf1TE9A+RqQzjGUUjgd+r//2gAMAwEAAhEDEQAAEL//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EFC//9oACAECEQE/ENDC/9oACAEBAAE/ECJRtMGESx4lsIxLUAxGEjQJ8leYNIOOeSl/2Q==" },
+  { name: "V", image: "/members/V.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB9s9E+SvDPqPB/9oACAEBAAEFAt7ms7XxD/Sbw+XuZJ3ta15//9oACAEDEQE/AZ/ISB4D/9oACAECEQE/AYfFQMQSX//aAAgBAQAGPwK3vxeSZR0EkaFHFIHqOBq6+9p/A/3Hf/7uk/hDV1Hi/wD/xAAXEAEBAQEAAAAAAAAAAAAAAAABEQAh/9oACAEBAAE/IUte4Bg8FZHZ2gDl7UMKoVDEcju//2gAMAwEAAhEDEQAAEDf/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EFoH6b//2gAIAQIRAT8QbBuH0/xf/9oACAEBAAE/EEhq+rHGiEyIDYgmmEggk7p2sQcAVQw/hihAAID8t//Z" },
+  { name: "Jungkook", image: "/members/JK.jpg", blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACqADAAQAAAABAAAACgAAAAD/wgARCAAKAAoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAMEAQUABgcICQoL/8QAwxAAAQMDAgQDBAYEBwYECAZzAQIAAxEEEiEFMRMiEAZBUTIUYXEjB4EgkUIVoVIzsSRiMBbBctFDkjSCCOFTQCVjFzXwk3OiUESyg/EmVDZklHTCYNKEoxhw4idFN2WzVXWklcOF8tNGdoDjR1ZmtAkKGRooKSo4OTpISUpXWFlaZ2hpand4eXqGh4iJipCWl5iZmqClpqeoqaqwtba3uLm6wMTFxsfIycrQ1NXW19jZ2uDk5ebn6Onq8/T19vf4+fr/2wBDAAICAgICAgMCAgMFAwMDBQYFBQUFBggGBgYGBggKCAgICAgICgoKCgoKCgoMDAwMDAwODg4ODg8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/aAAwDAQACEQMRAAAB+hPSfLe59XzP/9oACAEBAAEFApVS2viOgL3n/Grcnkf/2gAIAQMRAT8B93mn/9oACAECEQE/ATj4Bf/aAAgBAQAGPwIzXN0r3eQYpRrgnTzHrXzdWXH/AGQ//8QAFxABAQEBAAAAAAAAAAAAAAAAAREAIf/aAAgBAQABPyF4iG2FHBznfS8Ro3MGbeR//G//2gAMAwEAAhEDEQAAEI//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDEQE/EOzHV//aAAgBAhEBPxDtHZf/2gAIAQEAAT8Ql4amGUJBGXOowKGIdAmiPdA86lmbHN5Z+b1v/9k=" },
 ];
 
 export function Navbar() {
@@ -83,7 +84,7 @@ export function HeroSection() {
                   ))}
                 </div>
                 <div className="flex gap-2 mt-1">
-                  {["j-hope", "Jimin", "V", "JK"].map((name) => (
+                  {["J-Hope", "Jimin", "V", "JK"].map((name) => (
                     <div
                       key={name}
                       className="w-14 h-18 rounded-xl bg-gradient-to-b from-blue-100/60 to-pink-100/60 border border-blue-200/40 flex items-end justify-center pb-1"
@@ -201,23 +202,24 @@ export function BTSSection() {
           {BTS_MEMBERS.map((member, i) => (
             <div
               key={member.name}
-              className="group relative aspect-[3/4] rounded-2xl border border-pink-200/30 bg-gradient-to-b from-white to-pink-50/50 overflow-hidden hover:border-pink-300/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-100/30"
+              className="group relative aspect-[3/4] rounded-2xl border border-pink-200/30 overflow-hidden hover:border-pink-300/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-100/30"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              {/* Placeholder gradient */}
-              <div className="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-pink-50/50" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-3">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-pink-200 to-blue-200 border border-pink-300/30 flex items-center justify-center mb-3">
-                  <span className="text-lg font-bold text-pink-400">
-                    {member.name[0]}
-                  </span>
-                </div>
-                <h3 className="font-semibold text-sm sm:text-base">
+              <Image
+                src={member.image}
+                alt={member.name}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 14vw"
+                placeholder="blur"
+                blurDataURL={member.blur}
+              />
+              {/* Name overlay */}
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent pt-8 pb-3 px-2">
+                <h3 className="font-semibold text-sm sm:text-base text-white text-center">
                   {member.name}
                 </h3>
               </div>
-              {/* Hover glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-pink-200/20 to-transparent" />
             </div>
           ))}
         </div>

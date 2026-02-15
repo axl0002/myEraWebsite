@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <FeaturesSection />
         <BTSSection />
+        <FeaturesSection />
         {/* <HowItWorksSection /> */}
         {/* <CTASection /> */}
       </main>
