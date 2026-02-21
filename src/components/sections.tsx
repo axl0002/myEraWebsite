@@ -61,13 +61,11 @@ export function HeroSection() {
           </p>
         </div>
 
-        {/* Phone mockup placeholder */}
+        {/* Phone mockup placeholder — commented out until real mockup is ready
         <div className="relative mt-16 sm:mt-20 animate-fade-in-up [animation-delay:600ms] opacity-0">
           <div className="mx-auto w-[280px] h-[560px] rounded-[3rem] border-2 border-pink-200/40 bg-gradient-to-b from-pink-50 to-blue-50 p-3 glow-accent">
             <div className="w-full h-full rounded-[2.5rem] bg-gradient-to-b from-white to-pink-50/50 border border-pink-100 flex flex-col items-center justify-center overflow-hidden">
-              {/* Notch */}
               <div className="absolute top-6 w-24 h-6 bg-background rounded-full" />
-              {/* Mock app content */}
               <div className="flex flex-col items-center gap-4 p-6">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
                   <span className="text-2xl font-bold text-white">M</span>
@@ -96,7 +94,6 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          {/* Floating decorative elements */}
           <div className="absolute -left-4 top-1/3 w-20 h-20 rounded-2xl bg-pink-50 border border-pink-200/40 backdrop-blur-sm animate-float flex items-center justify-center">
             <HeartIcon className="w-8 h-8 text-pink-400" />
           </div>
@@ -104,6 +101,7 @@ export function HeroSection() {
             <StarIcon className="w-6 h-6 text-blue-400" />
           </div>
         </div>
+        */}
       </div>
     </section>
   );
