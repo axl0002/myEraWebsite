@@ -9,9 +9,9 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "My Era - Relive Your Favourite K-Pop Moments",
+  title: "MyEra - Relive Your Favourite K-Pop Moments",
   description:
-    "Upload and share your favourite memories of K-Pop idols. Currently featuring BTS as they make their comeback. Download My Era and start building your collection.",
+    "Upload and share your favourite memories of K-Pop idols. Currently featuring BTS as they make their comeback. Download MyEra and start building your collection.",
   keywords: [
     "kpop",
     "BTS",
@@ -22,17 +22,24 @@ export const metadata: Metadata = {
     "bangtan",
     "ARMY",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: { url: "/apple-icon.png", sizes: "180x180" },
+  },
   openGraph: {
-    title: "My Era - Relive Your Favourite K-Pop Moments",
+    title: "MyEra - Relive Your Favourite K-Pop Moments",
     description:
       "Upload and share your favourite memories of K-Pop idols. Currently featuring BTS.",
     url: "https://getmyera.app",
-    siteName: "My Era",
+    siteName: "MyEra",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "My Era - Relive Your Favourite K-Pop Moments",
+    title: "MyEra - Relive Your Favourite K-Pop Moments",
     description:
       "Upload and share your favourite memories of K-Pop idols. Currently featuring BTS.",
   },

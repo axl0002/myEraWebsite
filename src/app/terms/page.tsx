@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - My Era",
-  description: "Terms of Service for the My Era mobile application and website.",
+  title: "Terms of Service - MyEra",
+  description: "Terms of Service for the MyEra mobile application and website.",
 };
 
 export default function TermsOfService() {
@@ -15,7 +15,7 @@ export default function TermsOfService() {
             <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
               <span className="text-white font-bold text-xs">M</span>
             </div>
-            <span className="text-sm font-semibold tracking-tight">my era</span>
+            <span className="text-sm font-semibold tracking-tight">MyEra</span>
           </Link>
         </div>
       </nav>
@@ -30,7 +30,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
             <p>
-              By accessing or using the My Era mobile application and the website at getmyera.app
+              By accessing or using the MyEra mobile application and the website at getmyera.app
               (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of
               Service (&quot;Terms&quot;). If you do not agree to these Terms, do not use the
               Service.
@@ -91,7 +91,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">5. Community Guidelines and Zero-Tolerance Abuse Policy</h2>
             <p className="mb-3">
-              My Era is committed to maintaining a safe, positive, and respectful community for all
+              MyEra is committed to maintaining a safe, positive, and respectful community for all
               fans. We enforce a <strong className="text-white">zero-tolerance policy</strong> on
               abuse of any kind. The following are strictly prohibited:
             </p>

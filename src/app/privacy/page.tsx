@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - My Era",
-  description: "Privacy Policy for the My Era mobile application and website.",
+  title: "Privacy Policy - MyEra",
+  description: "Privacy Policy for the MyEra mobile application and website.",
 };
 
 export default function PrivacyPolicy() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
               <span className="text-white font-bold text-xs">M</span>
             </div>
-            <span className="text-sm font-semibold tracking-tight">my era</span>
+            <span className="text-sm font-semibold tracking-tight">MyEra</span>
           </Link>
         </div>
       </nav>
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
             <p>
-              My Era (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the My Era mobile
+              MyEra (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the MyEra mobile
               application and the website at getmyera.app (collectively, the &quot;Service&quot;). This
               Privacy Policy explains how we collect, use, disclose, and safeguard your information
               when you use our Service.

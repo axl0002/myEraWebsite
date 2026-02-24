@@ -16,10 +16,14 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-pink-200/30">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">M</span>
-          </div>
-          <span className="text-lg font-semibold tracking-tight">my era</span>
+          <Image
+            src="/logo-icon.png"
+            alt="MyEra"
+            width={32}
+            height={32}
+            className="rounded-lg"
+          />
+          <span className="text-lg font-semibold tracking-tight">MyEra</span>
         </div>
       </div>
     </nav>
@@ -44,13 +48,13 @@ export function HeroSection() {
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up">
           Relive your favourite
           <br />
-          <span className="text-gradient">K-Pop memories</span>
+          <span className="text-gradient">BTS eras</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto mb-10 animate-fade-in-up [animation-delay:200ms] opacity-0">
-          Upload and share your most cherished memories of your favourite idols.
-          Build your personal era collection, starting with BTS.
+          You already have hundreds of saved BTS photos in your camera roll.
+          Upload them. Organise them. Build your personal era collection - starting with BTS.
         </p>
 
         {/* Waitlist */}
@@ -140,13 +144,11 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
-            Your eras, your memories,
-            <br />
-            <span className="text-gradient">all in one place</span>
+            <span className="text-gradient">Your eras, collected.</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            A space designed for K-Pop fans to collect, share, and relive their
-            most treasured moments.
+            A digital photocard journal for ARMY.
+            Upload, swipe, and curate your BTS archive - all in one place.
           </p>
         </div>
 
@@ -184,14 +186,11 @@ export function BTSSection() {
             Featured Group
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
-            BTS is making their
-            <br />
-            <span className="text-gradient">comeback</span>
+            <span className="text-gradient">Arirang era begins</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            To celebrate BTS reuniting, My Era is launching with exclusive
-            support for all 7 members. Upload your favourite moments from every
-            era — from debut to today.
+            As BTS return with Arirang, MyEra launches with full support for all 7 members — from debut to now.
+            Collect the moments that shaped you.
           </p>
         </div>
 
@@ -317,7 +316,7 @@ export function CTASection() {
           <span className="text-gradient">your era?</span>
         </h2>
         <p className="text-gray-500 text-lg max-w-xl mx-auto mb-10">
-          Be the first to know when My Era launches. Join the waitlist and
+          Be the first to know when MyEra launches. Join the waitlist and
           get early access to start sharing your favourite BTS moments.
         </p>
 
@@ -337,9 +336,13 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
-              <span className="text-white font-bold text-xs">M</span>
-            </div>
+            <Image
+              src="/logo-icon.png"
+              alt="MyEra"
+              width={28}
+              height={28}
+              className="rounded-lg"
+            />
             <span className="text-sm font-semibold tracking-tight">my era</span>
           </div>
 
@@ -356,7 +359,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-gray-400">
-            &copy; 2026 My Era. All rights reserved.
+            &copy; 2026 MyEra. All rights reserved.
           </p>
         </div>
       </div>
