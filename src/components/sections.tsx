@@ -15,16 +15,13 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-pink-200/30">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/logo-icon.png"
-            alt="MyEra"
-            width={32}
-            height={32}
-            className="rounded-lg"
-          />
-          <span className="text-lg font-semibold tracking-tight">MyEra</span>
-        </div>
+        <Image
+          src="/logo-long.png"
+          alt="My Era"
+          width={93}
+          height={34}
+          className="h-[34px] w-auto"
+        />
       </div>
     </nav>
   );
@@ -343,7 +340,7 @@ export function Footer() {
               height={28}
               className="rounded-lg"
             />
-            <span className="text-sm font-semibold tracking-tight">my era</span>
+            <span className="text-sm font-semibold tracking-tight">MyEra</span>
           </div>
 
           <div className="flex items-center gap-6 text-sm text-gray-400">
@@ -353,8 +350,8 @@ export function Footer() {
             <a href="/terms" className="hover:text-gray-600 transition-colors">
               Terms
             </a>
-            <a href="#" className="hover:text-gray-600 transition-colors">
-              Contact
+            <a href="/support" className="hover:text-gray-600 transition-colors">
+              Support
             </a>
           </div>
 

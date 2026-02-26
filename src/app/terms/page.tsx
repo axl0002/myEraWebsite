@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,9 +13,13 @@ export default function TermsOfService() {
       <nav className="border-b border-pink-200/30 px-6 py-5">
         <div className="max-w-3xl mx-auto">
           <Link href="/" className="flex items-center gap-2 w-fit">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-pink-300 to-blue-300 flex items-center justify-center">
-              <span className="text-white font-bold text-xs">M</span>
-            </div>
+            <Image
+              src="/logo-icon.png"
+              alt="MyEra"
+              width={28}
+              height={28}
+              className="rounded-lg"
+            />
             <span className="text-sm font-semibold tracking-tight">MyEra</span>
           </Link>
         </div>
@@ -126,7 +131,7 @@ export default function TermsOfService() {
             <h2 className="text-xl font-semibold text-white mb-3">7. Intellectual Property</h2>
             <p>
               The Service and its original content (excluding User Content), features, and
-              functionality are owned by My Era and are protected by copyright, trademark, and other
+              functionality are owned by MyEra and are protected by copyright, trademark, and other
               intellectual property laws. You may not copy, modify, distribute, or create derivative
               works based on the Service without our prior written consent.
             </p>
@@ -168,7 +173,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">11. Limitation of Liability</h2>
             <p>
-              To the fullest extent permitted by law, My Era shall not be liable for any indirect,
+              To the fullest extent permitted by law, MyEra shall not be liable for any indirect,
               incidental, special, consequential, or punitive damages arising out of or relating to
               your use of the Service, whether based on warranty, contract, tort, or any other legal
               theory.
