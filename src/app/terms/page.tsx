@@ -12,15 +12,14 @@ export default function TermsOfService() {
     <div className="min-h-screen bg-background">
       <nav className="border-b border-pink-200/30 px-6 py-5">
         <div className="max-w-3xl mx-auto">
-          <Link href="/" className="flex items-center gap-2 w-fit">
+          <Link href="/" className="w-fit block">
             <Image
-              src="/logo-icon.png"
-              alt="MyEra"
-              width={28}
-              height={28}
-              className="rounded-lg"
+              src="/logo-long.png"
+              alt="My Era"
+              width={93}
+              height={34}
+              className="h-[34px] w-auto"
             />
-            <span className="text-sm font-semibold tracking-tight">MyEra</span>
           </Link>
         </div>
       </nav>
