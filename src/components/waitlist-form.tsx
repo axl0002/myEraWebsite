@@ -62,7 +62,7 @@ export function WaitlistForm({ className }: { className?: string }) {
             disabled={status === "loading"}
             className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-300 to-blue-300 hover:from-pink-400 hover:to-blue-400 transition-all text-white font-medium text-sm glow-accent disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap shadow-sm"
           >
-            {status === "loading" ? "Joining..." : "Join Waitlist"}
+            {status === "loading" ? "joining..." : "join waitlist"}
           </button>
         </form>
       )}

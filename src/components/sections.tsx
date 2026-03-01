@@ -38,27 +38,27 @@ export function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-pink-300/40 bg-pink-50 text-pink-400 text-sm mb-8 animate-fade-in">
           <span className="w-2 h-2 rounded-full bg-pink-300 animate-pulse" />
-          BTS is back — celebrate their comeback
+          BTS is back - celebrate their comeback
         </div>
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up">
-          Relive your favourite
+          relive your favourite
           <br />
           <span className="text-gradient">BTS eras</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto mb-10 animate-fade-in-up [animation-delay:200ms] opacity-0">
-          You already have hundreds of saved BTS photos in your camera roll.
-          Upload them. Organise them. Build your personal era collection - starting with BTS.
+          you already have hundreds of saved BTS photos in your camera roll.
+          upload them, organise them, build your personal era collection. starting with BTS.
         </p>
 
         {/* Waitlist */}
         <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full">
           <WaitlistForm />
           <p className="text-gray-400 text-sm mt-3">
-            Be the first to know when we launch.
+            be the first to know when we launch.
           </p>
         </div>
 
@@ -112,27 +112,27 @@ export function FeaturesSection() {
   const features = [
     {
       icon: <CameraIcon className="w-6 h-6" />,
-      title: "Upload Memories",
+      title: "upload memories",
       description:
-        "Share your favourite photos, concert clips, and fan moments from every era of your favourite idols.",
+        "share your favourite photos, concert clips, and fan moments from every era of your favourite idols.",
     },
     {
       icon: <SparklesIcon className="w-6 h-6" />,
-      title: "Curate Your Eras",
+      title: "curate your eras",
       description:
-        "Organise your memories by era, comeback, or moment. Build a timeline of your K-Pop journey.",
+        "organise your memories by era, comeback, or moment. build a timeline of your K-Pop journey.",
     },
     {
       icon: <HeartIcon className="w-6 h-6" />,
-      title: "Connect with ARMY",
+      title: "connect with ARMY",
       description:
-        "Discover and appreciate memories shared by fans around the world. React, save, and share.",
+        "discover and appreciate memories shared by fans around the world. react, save, and share.",
     },
     {
       icon: <ShieldIcon className="w-6 h-6" />,
-      title: "Safe Community",
+      title: "safe community",
       description:
-        "A respectful space built for fans, by fans. We keep the community positive and welcoming.",
+        "a respectful space built for fans, by fans. we keep the community positive and welcoming.",
     },
   ];
 
@@ -141,11 +141,11 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
-            <span className="text-gradient">Your eras, collected.</span>
+            <span className="text-gradient">your eras, collected.</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            A digital photocard journal for ARMY.
-            Upload, swipe, and curate your BTS archive - all in one place.
+            a digital photocard journal for ARMY.
+            upload, swipe, and curate your BTS archive — all in one place.
           </p>
         </div>
 
@@ -183,11 +183,11 @@ export function BTSSection() {
             Featured Group
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
-            <span className="text-gradient">Arirang era begins</span>
+            <span className="text-gradient">Arirang era is coming</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            As BTS return with Arirang, MyEra launches with full support for all 7 members — from debut to now.
-            Collect the moments that shaped you.
+            with this comeback, my era launches with full support for all 7 members, from debut to now.
+            collect the moments that shaped you.
           </p>
         </div>
 
@@ -313,7 +313,7 @@ export function CTASection() {
           <span className="text-gradient">your era?</span>
         </h2>
         <p className="text-gray-500 text-lg max-w-xl mx-auto mb-10">
-          Be the first to know when MyEra launches. Join the waitlist and
+          be the first to know when MyEra launches. Join the waitlist and
           get early access to start sharing your favourite BTS moments.
         </p>
 
