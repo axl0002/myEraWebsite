@@ -55,7 +55,7 @@ export function HeroSection() {
         </p>
 
         {/* Waitlist */}
-        <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full">
+        <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full flex flex-col items-center">
           <WaitlistForm />
           <p className="text-gray-400 text-sm mt-3">
             be the first to know when we launch.
