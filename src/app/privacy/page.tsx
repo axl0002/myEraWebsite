@@ -25,14 +25,14 @@ export default function PrivacyPolicy() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-12 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Privacy Policy</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-foreground">Privacy Policy</h1>
         <p className="text-gray-400 text-sm mb-12">
           Last updated: 14 February 2026
         </p>
 
         <div className="space-y-10 text-gray-500 leading-relaxed">
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">1. Introduction</h2>
             <p>
               MyEra (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the MyEra mobile
               application and the website at getmyera.app (collectively, the &quot;Service&quot;). This
@@ -42,9 +42,9 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">2. Information We Collect</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">2. Information We Collect</h2>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               2.1 Account Information
             </h3>
             <p>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
               Apple or Google password.
             </p>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               2.2 User Content
             </h3>
             <p>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
               and comments you post about K-Pop idols and their eras.
             </p>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               2.3 Automatically Collected Information
             </h3>
             <p>
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">3. How We Use Your Information</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">3. How We Use Your Information</h2>
             <p className="mb-3">We use the information we collect to:</p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>Create and manage your account</li>
@@ -86,26 +86,26 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">4. Sharing of Information</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">4. Sharing of Information</h2>
             <p className="mb-3">We do not sell your personal information. We may share your information in the following circumstances:</p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>
-                <strong className="text-gray-600">Public content:</strong> Memories and comments you post are visible to other users of the Service.
+                <strong className="text-foreground">Public content:</strong> Memories and comments you post are visible to other users of the Service.
               </li>
               <li>
-                <strong className="text-gray-600">Service providers:</strong> We may share information with third-party vendors who assist us in operating the Service (e.g. hosting, analytics), subject to confidentiality obligations.
+                <strong className="text-foreground">Service providers:</strong> We may share information with third-party vendors who assist us in operating the Service (e.g. hosting, analytics), subject to confidentiality obligations.
               </li>
               <li>
-                <strong className="text-gray-600">Legal requirements:</strong> We may disclose information if required by law, regulation, or legal process.
+                <strong className="text-foreground">Legal requirements:</strong> We may disclose information if required by law, regulation, or legal process.
               </li>
               <li>
-                <strong className="text-gray-600">Safety:</strong> We may disclose information when we believe it is necessary to protect the safety of our users or the public.
+                <strong className="text-foreground">Safety:</strong> We may disclose information when we believe it is necessary to protect the safety of our users or the public.
               </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">5. Data Storage and Security</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">5. Data Storage and Security</h2>
             <p>
               Your data is stored on secure servers provided by our infrastructure partners. We
               implement appropriate technical and organisational measures to protect your personal
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">6. Your Rights</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">6. Your Rights</h2>
             <p className="mb-3">Depending on your location, you may have the right to:</p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>Access the personal information we hold about you</li>
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">7. Third-Party Authentication</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">7. Third-Party Authentication</h2>
             <p>
               We offer sign-in through Apple and Google. When you authenticate through these
               providers, their respective privacy policies apply to the information they collect. We
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">8. Children&apos;s Privacy</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">8. Children&apos;s Privacy</h2>
             <p>
               The Service is not intended for children under the age of 13. We do not knowingly
               collect personal information from children under 13. If we become aware that we have
@@ -151,7 +151,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">9. Changes to This Policy</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">9. Changes to This Policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of any material
               changes by posting the updated policy on this page and updating the &quot;Last
@@ -161,7 +161,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">10. Contact Us</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">10. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy or our data practices, please
               contact us at:{" "}
