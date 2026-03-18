@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - MyEra",
-  description: "Terms of Service for the MyEra mobile application and website.",
+  title: "Terms of Service & EULA - MyEra",
+  description: "Terms of Service and End User License Agreement (EULA) for the MyEra mobile application and website.",
 };
 
 export default function TermsOfService() {
@@ -25,9 +25,9 @@ export default function TermsOfService() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-12 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Terms of Service</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Terms of Service &amp; End User License Agreement (EULA)</h1>
         <p className="text-gray-400 text-sm mb-12">
-          Last updated: 14 February 2026
+          Last updated: 18 March 2026
         </p>
 
         <div className="space-y-10 text-gray-500 leading-relaxed">
@@ -36,8 +36,8 @@ export default function TermsOfService() {
             <p>
               By accessing or using the MyEra mobile application and the website at getmyera.app
               (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of
-              Service (&quot;Terms&quot;). If you do not agree to these Terms, do not use the
-              Service.
+              Service and End User License Agreement (&quot;Terms&quot; or &quot;EULA&quot;). If you do not agree to these Terms, do not use the
+              Service. These Terms serve as a legally binding agreement between you and MyEra governing your use of the Service.
             </p>
           </section>
 
@@ -93,26 +93,30 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">5. Community Guidelines and Zero-Tolerance Abuse Policy</h2>
+            <h2 className="text-xl font-semibold text-white mb-3">5. Community Guidelines and Zero-Tolerance Policy on Objectionable Content &amp; Abusive Users</h2>
             <p className="mb-3">
               MyEra is committed to maintaining a safe, positive, and respectful community for all
-              fans. We enforce a <strong className="text-white">zero-tolerance policy</strong> on
-              abuse of any kind. The following are strictly prohibited:
+              users. <strong className="text-white">There is absolutely no tolerance for objectionable
+              content or abusive users on the Service.</strong> By using MyEra, you acknowledge and agree
+              to abide by this zero-tolerance policy. The following are strictly prohibited:
             </p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>Harassment, bullying, or intimidation of any user</li>
               <li>Hate speech, discrimination, or content targeting individuals or groups based on race, ethnicity, gender, sexual orientation, religion, or disability</li>
               <li>Threats of violence or encouragement of self-harm</li>
-              <li>Posting explicit, obscene, or sexually inappropriate content</li>
+              <li>Posting explicit, obscene, sexually inappropriate, or otherwise objectionable content</li>
               <li>Doxxing or sharing another person&apos;s private information without consent</li>
               <li>Spam, scams, or misleading content</li>
-              <li>Impersonation of other users, idols, or public figures</li>
+              <li>Impersonation of other users or public figures</li>
               <li>Any content that infringes on the intellectual property rights of others</li>
+              <li>Any other content or behaviour that MyEra deems objectionable or harmful to the community</li>
             </ul>
             <p className="mt-3">
               <strong className="text-white">Violation of this policy will result in immediate and
-              permanent account termination without warning.</strong> We may also report illegal
-              activity to the appropriate authorities.
+              permanent account termination without warning.</strong> Objectionable content will be
+              removed promptly upon discovery or report. We may also report illegal
+              activity to the appropriate authorities. Users can report objectionable content or abusive
+              behaviour by contacting us at support@getmyera.app.
             </p>
           </section>
 
