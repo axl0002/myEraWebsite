@@ -25,14 +25,14 @@ export default function TermsOfService() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-12 sm:py-20">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Terms of Service &amp; End User License Agreement (EULA)</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-foreground">Terms of Service &amp; End User License Agreement (EULA)</h1>
         <p className="text-gray-400 text-sm mb-12">
           Last updated: 18 March 2026
         </p>
 
         <div className="space-y-10 text-gray-500 leading-relaxed">
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">1. Acceptance of Terms</h2>
             <p>
               By accessing or using the MyEra mobile application and the website at getmyera.app
               (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of
@@ -42,7 +42,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">2. Eligibility</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">2. Eligibility</h2>
             <p>
               You must be at least 13 years old to use the Service. By using the Service, you
               represent and warrant that you meet this age requirement. If you are under the age of
@@ -52,7 +52,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">3. Account Registration</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">3. Account Registration</h2>
             <p>
               To use certain features of the Service, you must create an account by signing in with
               Apple or Google. You are responsible for maintaining the security of your account and
@@ -62,9 +62,9 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">4. User Content</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">4. User Content</h2>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               4.1 Your Content
             </h3>
             <p>
@@ -74,7 +74,7 @@ export default function TermsOfService() {
               distribute your User Content in connection with operating and providing the Service.
             </p>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               4.2 Content Responsibility
             </h3>
             <p>
@@ -83,7 +83,7 @@ export default function TermsOfService() {
               does not violate the rights of any third party.
             </p>
 
-            <h3 className="text-base font-semibold text-gray-600 mt-4 mb-2">
+            <h3 className="text-base font-semibold text-foreground/70 mt-4 mb-2">
               4.3 Content Removal
             </h3>
             <p>
@@ -93,10 +93,10 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">5. Community Guidelines and Zero-Tolerance Policy on Objectionable Content &amp; Abusive Users</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">5. Community Guidelines and Zero-Tolerance Policy on Objectionable Content &amp; Abusive Users</h2>
             <p className="mb-3">
               MyEra is committed to maintaining a safe, positive, and respectful community for all
-              users. <strong className="text-white">There is absolutely no tolerance for objectionable
+              users. <strong className="text-foreground">There is absolutely no tolerance for objectionable
               content or abusive users on the Service.</strong> By using MyEra, you acknowledge and agree
               to abide by this zero-tolerance policy. The following are strictly prohibited:
             </p>
@@ -112,7 +112,7 @@ export default function TermsOfService() {
               <li>Any other content or behaviour that MyEra deems objectionable or harmful to the community</li>
             </ul>
             <p className="mt-3">
-              <strong className="text-white">Violation of this policy will result in immediate and
+              <strong className="text-foreground">Violation of this policy will result in immediate and
               permanent account termination without warning.</strong> Objectionable content will be
               removed promptly upon discovery or report. We may also report illegal
               activity to the appropriate authorities. Users can report objectionable content or abusive
@@ -121,7 +121,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">6. Comments and Interactions</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">6. Comments and Interactions</h2>
             <p>
               The Service allows you to comment on your own and other users&apos; posts. All
               comments are subject to these Terms and our community guidelines. We reserve the right
@@ -131,7 +131,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">7. Intellectual Property</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">7. Intellectual Property</h2>
             <p>
               The Service and its original content (excluding User Content), features, and
               functionality are owned by MyEra and are protected by copyright, trademark, and other
@@ -141,7 +141,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">8. Prohibited Uses</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">8. Prohibited Uses</h2>
             <p className="mb-3">In addition to the community guidelines above, you agree not to:</p>
             <ul className="list-disc list-inside space-y-1.5">
               <li>Use the Service for any unlawful purpose</li>
@@ -154,7 +154,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">9. Termination</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">9. Termination</h2>
             <p>
               We may terminate or suspend your account and access to the Service immediately, without
               prior notice, for any reason, including if you breach these Terms. Upon termination,
@@ -164,7 +164,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">10. Disclaimers</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">10. Disclaimers</h2>
             <p>
               The Service is provided on an &quot;as is&quot; and &quot;as available&quot; basis
               without warranties of any kind, either express or implied. We do not warrant that the
@@ -174,7 +174,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">11. Limitation of Liability</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">11. Limitation of Liability</h2>
             <p>
               To the fullest extent permitted by law, MyEra shall not be liable for any indirect,
               incidental, special, consequential, or punitive damages arising out of or relating to
@@ -184,7 +184,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">12. Changes to These Terms</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">12. Changes to These Terms</h2>
             <p>
               We reserve the right to modify these Terms at any time. We will notify you of material
               changes by posting the updated Terms on this page and updating the &quot;Last
@@ -194,7 +194,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white mb-3">13. Contact Us</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-3">13. Contact Us</h2>
             <p>
               If you have any questions about these Terms, please contact us at:{" "}
               <a
