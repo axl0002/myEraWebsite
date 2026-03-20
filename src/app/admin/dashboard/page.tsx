@@ -9,6 +9,7 @@ import ReferralByDayChart from "../components/ReferralByDayChart";
 import TimezoneChart from "../components/TimezoneChart";
 import MemoriesChart from "../components/MemoriesChart";
 import VotesChart from "../components/VotesChart";
+import SavedMemoriesChart from "../components/SavedMemoriesChart";
 
 export default function AdminDashboard() {
     const [userCount, setUserCount] = useState<number | null>(null);
@@ -55,6 +56,9 @@ export default function AdminDashboard() {
                 </div>
                 <div className="col-span-1 md:col-span-2">
                     <VotesChart />
+                </div>
+                <div className="col-span-1 md:col-span-2">
+                    <SavedMemoriesChart />
                 </div>
                 <ReferralChart />
                 <TimezoneChart />
