@@ -54,12 +54,19 @@ export function HeroSection() {
           upload them, organise them, build your personal era collection. starting with BTS.
         </p>
 
-        {/* Waitlist */}
+        {/* Download */}
         <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full flex flex-col items-center">
-          <WaitlistForm />
-          <p className="text-gray-400 text-sm mt-3">
-            be the first to know when we launch.
-          </p>
+          <a
+            href="https://apps.apple.com/gb/app/myera-k-pop/id6759208097"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000"
+              alt="Download on the App Store"
+              className="h-[54px] w-auto"
+            />
+          </a>
         </div>
 
         {/* Phone mockup placeholder — commented out until real mockup is ready
