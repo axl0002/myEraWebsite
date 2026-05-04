@@ -55,7 +55,7 @@ export function HeroSection() {
         </p>
 
         {/* Download */}
-        <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full flex flex-col items-center">
+        <div className="animate-fade-in-up [animation-delay:400ms] opacity-0 w-full flex flex-row items-center justify-center gap-3 flex-wrap">
           <a
             href="https://apps.apple.com/gb/app/myera-k-pop/id6759208097"
             target="_blank"
@@ -65,6 +65,17 @@ export function HeroSection() {
               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000"
               alt="Download on the App Store"
               className="h-[54px] w-auto"
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.alexliu.myera"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Get it on Google Play"
+              className="h-[80px] w-auto -my-[13px]"
             />
           </a>
         </div>
