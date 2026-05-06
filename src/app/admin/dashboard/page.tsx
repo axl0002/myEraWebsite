@@ -11,6 +11,7 @@ import MemoriesChart from "../components/MemoriesChart";
 import VotesChart from "../components/VotesChart";
 import SavedMemoriesChart from "../components/SavedMemoriesChart";
 import CommentsChart from "../components/CommentsChart";
+import EventMessagesChart from "../components/EventMessagesChart";
 
 export default function AdminDashboard() {
     const [userCount, setUserCount] = useState<number | null>(null);
@@ -63,6 +64,9 @@ export default function AdminDashboard() {
                 </div>
                 <div className="col-span-1 md:col-span-2">
                     <CommentsChart />
+                </div>
+                <div className="col-span-1 md:col-span-2">
+                    <EventMessagesChart />
                 </div>
                 <ReferralChart />
                 <TimezoneChart />
