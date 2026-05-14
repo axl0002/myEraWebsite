@@ -9,9 +9,11 @@ import ReferralByDayChart from "../components/ReferralByDayChart";
 import TimezoneChart from "../components/TimezoneChart";
 import MemoriesChart from "../components/MemoriesChart";
 import VotesChart from "../components/VotesChart";
+import SuperVotesChart from "../components/SuperVotesChart";
 import SavedMemoriesChart from "../components/SavedMemoriesChart";
 import CommentsChart from "../components/CommentsChart";
 import EventMessagesChart from "../components/EventMessagesChart";
+import DMMessagesChart from "../components/DMMessagesChart";
 
 export default function AdminDashboard() {
     const [userCount, setUserCount] = useState<number | null>(null);
@@ -60,6 +62,9 @@ export default function AdminDashboard() {
                     <VotesChart />
                 </div>
                 <div className="col-span-1 md:col-span-2">
+                    <SuperVotesChart />
+                </div>
+                <div className="col-span-1 md:col-span-2">
                     <SavedMemoriesChart />
                 </div>
                 <div className="col-span-1 md:col-span-2">
@@ -67,6 +72,9 @@ export default function AdminDashboard() {
                 </div>
                 <div className="col-span-1 md:col-span-2">
                     <EventMessagesChart />
+                </div>
+                <div className="col-span-1 md:col-span-2">
+                    <DMMessagesChart />
                 </div>
                 <ReferralChart />
                 <TimezoneChart />
